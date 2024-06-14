@@ -1,0 +1,156 @@
+  *{
+    margin:0 ;
+    padding: 0;
+    box-sizing: border-box;
+    cursor:pointer;
+
+  }
+  body{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(  40deg,rgb(193, 64, 171),rgb(13, 238, 215));
+    
+  }
+
+  .circle{
+    height: 420px;
+    width: 420px;
+    right: 63%;
+    top: 19%;
+    background: rgba(161, 84, 141, 0.4);
+    border-radius: 50%;
+    border: 1px solid #d787c6;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    cursor: pointer;
+    z-index: -1;
+    opacity: 5;
+}
+
+
+
+
+  form{
+    width: 25rem;
+    height: 28rem;
+    display: flex;
+    flex-direction: column;
+    background: rgba(255,255, 255, 0.3);
+    box-shadow: 0 8px 32px 0 rgba(31,38,135,37);
+    border-radius: 30px;
+    border-left: 1px solid rgba(255,255,255,.3);
+    border-top: 1px solid rgba(255,255,255,.3);
+    
+  }
+
+    form::before{
+        content: '';
+        position: absolute;
+        bottom: 3%;
+        right: 26%;
+        width: 140px;
+        height: 160px;
+        background: rgb(115,192,204);
+        border-radius: 10%;
+        animation: effect 2s linear infinite;
+        overflow: hidden;
+        z-index: -1;
+        opacity: 7;
+        
+        
+    }
+    
+    @keyframes effect{
+      0%{
+        width: 0;
+      }
+      50%{
+        width: 10rem;
+      }
+
+
+    }
+
+     
+    form::after{
+        content: '';
+        position: absolute;
+        top: 3%;
+        left: 29%;
+        width: 120px;
+        height: 140px;
+        background: rgb(192, 120, 168);
+        border-radius: 10%;
+        animation: eff 2s linear infinite;
+        overflow: visible;
+        z-index: -1;
+        opacity: 7;
+
+    }
+
+    @keyframes eff{
+      0%{
+        width: 0;
+      }
+      50%{
+        width: 10rem;
+      }
+
+
+    }
+
+  h1{
+    font-size: 40px;
+    text-align: center;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0,0,0,.9);
+    letter-spacing: 3px;
+    margin-bottom: 5%;
+    opacity: .9;
+  }
+  input{
+    width: 80%;
+    margin: 5%;
+    margin-bottom: 8%;
+    border: none;
+    outline: none;
+    background: transparent;
+    color: rgb(8, 8, 8);
+    border-bottom: 1px solid rgba(18, 18, 18, 0.6);
+  }
+button{
+    width: 50%;
+    margin: 3% auto;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    background: rgba(255, 100, 4, 0.907);
+    padding: 10px 30px;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    text-shadow: 2px 2px 4px rgba(255,255,255,0.2);
+    box-shadow: 3px 3px 5px rgba(31,38,135,37);
+    border-left: rgba(255,255,255,.3);
+    border-top: rgba(255,255,255,.3);
+}
+.Bharath:hover{
+   background: orange;
+   box-shadow: 0px 0px 20px rgb(180, 147, 86),0px 0px 40px rgb(190, 152, 82),0px 0px 60px rgb(215, 169, 82);
+
+
+}
+
+a{
+    font-size: 12px;
+    text-align: center;
+    align-items: center;
+    color: rgb(10, 10, 10);
+
+}
+  
